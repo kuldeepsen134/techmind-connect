@@ -1,0 +1,7 @@
+{
+  "name": "TechMind Connect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
