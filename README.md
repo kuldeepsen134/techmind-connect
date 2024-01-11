@@ -1,7 +1,9 @@
 # TechMind Connect Client
 
 ## Screenshot
-<img src="../screenshot.png" width="800px" alt="Screenshot">
+<img src="./public/logo192.png" width="800px" alt="Screenshot">
+<img src="./screenshot.png" width="800px" alt="Screenshot2">
+
 
 ## Description
 
