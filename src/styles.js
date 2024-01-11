@@ -7,18 +7,18 @@ export const inputTextStyle = {
         }
     },
     '& .MuiOutlinedInput-root': {
-        fontFamily: 'TestSöhne-Buch, sans-serif !important',
+        fontFamily: 'Gilroy, sans-serif !important',
         '&.Mui-focused fieldset': {
-            borderColor: '#0da37f'
+            borderColor: '#1976d2'
         },
         '&:hover fieldset': {
-            borderColor: '#0da37f'
+            borderColor: '#1976d2'
         }
     },
     '& .MuiInputLabel-root': {
         color: 'white',
         '&.Mui-focused': {
-            color: '#0da37f',
+            color: '#1976d2',
         }
     },
 };
@@ -30,7 +30,7 @@ export const inputTextColor = {
 };
 
 export const textFont = {
-    fontFamily: 'TestSöhne-Buch, sans-serif',
+    fontFamily: 'Gilroy, sans-serif',
 }
 
 export const codeFont = {
@@ -53,13 +53,13 @@ export const buttonStyle = {
 export const nav = {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "start"
 }
 
 export const selectTextStyle = {
     backgroundColor: '#40414f', borderRadius: 2,
     '& .MuiSelect-select': {
-        fontFamily: 'TestSöhne-Buch, sans-serif !important',
+        fontFamily: 'Gilroy, sans-serif !important',
 
     },
     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {

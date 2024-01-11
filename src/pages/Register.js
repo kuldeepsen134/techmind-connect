@@ -50,6 +50,11 @@ const Register = () => {
         }
     }, []);
 
+    const linearGradient = {
+        backgroundImage: 'radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)',
+    };
+
+
     return (
         <Box width={isNotMobile ? '40%' : '80%'} p={'2rem'}
             m={'2rem auto'}
@@ -64,7 +69,15 @@ const Register = () => {
                     value={email} onChange={(e) => setEmail(e.target.value)} />
                 <TextField inputProps={{ ...inputTextColor }} sx={inputTextStyle} autoComplete='new-password' label='Password' type='password' required fullWidth={true} margin='normal'
                     value={password} onChange={(e) => setPassword(e.target.value)} />
-                <Button type='submit' fullWidth={true} variant='contained' size='large' sx={{ color: "white", mt: 2, backgroundColor: '#0da37f', ...textFont, '&:hover': { backgroundColor: '#0b8e72' } }}>Sign Up</Button>
+                <Button type='submit' className='btn-box-login' fullWidth={true} variant='contained' size='large' sx={{
+                    color: 'white',
+
+                    mt: 2,
+                    ...textFont,
+                    ...linearGradient,
+                    '&:hover': { backgroundColor: '#d2bb19' },
+                }}>Sign Up</Button>
+
                 <Typography sx={{ color: "white", ...textFont }} mt={2}>Already have an account? <Link style={{ padding: 0 }} className='link' to='/login'>Please Login</Link></Typography>
                 <Collapse in={error !== ''}>
                     <Alert severity='error' sx={{ mb: 2, ...textFont }}>

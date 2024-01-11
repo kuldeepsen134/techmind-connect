@@ -48,7 +48,7 @@ const Navbar = () => {
 
             if (localStorage.getItem('expirationTime') && expirationTime < currentTime) {
                 // Token expired, perform logout
-                handleLogout();
+                // handleLogout();
             }
         };
 
@@ -85,31 +85,38 @@ const Navbar = () => {
     return (
         <Box
             width={"100%"}
+            className="header-box"
             p={"1rem 6%"}
-            textAlign={"center"}
+            textAlign={"end"}
             backgroundColor="#202123"
             sx={{ boxShadow: 3 }}>
-            <Typography sx={{ ...textFont, ...nav }} variant='h1' color={"#EFC75E"} fontWeight={"bold"} fontSize={40}>
-                <img src="/techmind-connect.png" width="60px" alt="logo"></img>TechMind Connect
-            </Typography>
-            {
-                loggedin ? (<>
-                    <Link to="/" onClick={home} className='link'>
-                        Home
-                    </Link>
-                    <Link to="/login" onClick={handleLogout} className='link'>
-                        Logout
-                    </Link>
-                </>) : (<>
-                    <Link to="/register" className='link'>
-                        Sign Up
-                    </Link>
-                    <Link to="/login" className='link'>
-                        Sign In
-                    </Link>
-                </>)
-            }
-            <InfoDialog />
+            <Link to="/" style={{ textDecoration: "none" }} >
+                <Typography sx={{ ...textFont, ...nav }} variant='h1' color={"#EFC75E"} fontWeight={"bold"} className='logo-font' fontSize={40}>
+                    <img src="/techmind-connect.png" width="100px" alt="logo"></img>
+                    TechMind Connect
+                </Typography>
+            </Link>
+            <div>
+                {
+                    loggedin ? (<>
+
+                        <Link to="/" onClick={home} className='link-btn'>
+                            Home
+                        </Link>
+                        <Link to="/login" onClick={handleLogout} className='link-btn'>
+                            Logout
+                        </Link>
+                    </>) : (<>
+                        <Link to="/register" className='link-btn'>
+                            Sign Up
+                        </Link>
+                        <Link to="/login" className='link-btn'>
+                            Sign In
+                        </Link>
+                    </>)
+                }
+            </div>
+            {/* <InfoDialog /> */}
         </Box>
     )
 }

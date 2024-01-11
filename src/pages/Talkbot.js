@@ -146,7 +146,7 @@ const Talkbot = () => {
                     ))}
                     {loading && (
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-                            <CircularProgress sx={{ color: '#0da37f' }} />
+                            <CircularProgress sx={{ color: '#efcb58' }} />
                         </div>
                     )}
                 </div>
@@ -154,8 +154,8 @@ const Talkbot = () => {
                     <form className="talkbot-form" onSubmit={handleSubmit}>
                         <TextField className="chat-input-textarea" inputProps={inputTextColor} sx={{ m: 0, ...inputTextStyle }} placeholder='Enter text here' multiline={true} type='text' required margin='normal'
                             value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={handleKeyPress} />
-                        <div className='groupButton'><Button disabled={loading} type='submit' className="chat-input-button" variant='contained' size='large' sx={{ color: "white", ml: "20px", backgroundColor: '#0da37f', ...textFont, '&:hover': { backgroundColor: '#0b8e72' } }}>Send</Button>
-                            {speakVol ? <VolumeUpIcon onClick={speakButton} sx={{ color: "#0da37f", ml: "20px", '&:hover': { color: '#0b8e72' } }} /> : <VolumeOffIcon onClick={speakButton} sx={{ color: "#0da37f", ml: "20px", '&:hover': { color: '#0b8e72' } }} />}</div>
+                        <div className='groupButton'><Button disabled={loading} type='submit' className="chat-input-button link-btn" variant='contained' size='large' sx={{ color: "white", ml: "20px", backgroundColor: '#0da37f', ...textFont, '&:hover': { backgroundColor: '#0b8e72' } }}>Send</Button>
+                            {speakVol ? <VolumeUpIcon onClick={speakButton} sx={{ color: "#efcb58", ml: "20px", '&:hover': { color: '#efcb18' } }} /> : <VolumeOffIcon onClick={speakButton} sx={{ color: "#efcb58", ml: "20px", '&:hover': { color: '#efcb18' } }} />}</div>
                     </form>
                 </div>
             </section>

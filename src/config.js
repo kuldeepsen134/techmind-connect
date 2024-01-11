@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === 'production') {
     API_BASE_URL = 'https://techmind-connect-server.vercel.app';
 } else {
     // Use localhost API domain
-    API_BASE_URL = 'http://localhost:2024'; // Adjust the port as needed
+    API_BASE_URL = 'https://techmind-connect-server.vercel.app'; // Adjust the port as needed
 }
 
 const API_CONFIG = {

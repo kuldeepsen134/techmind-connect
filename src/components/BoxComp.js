@@ -13,17 +13,17 @@ const BoxComp = (props) => {
     const { heading, route, title, description, icon } = props;
 
     switch (icon) {
-        case '1': iconVar = <FormatAlignLeftOutlined sx={{ fontSize: 80, color: "#0da37f", mt: 2, ml: 2 }} />
+        case '1': iconVar = <FormatAlignLeftOutlined className='icon-box-style' sx={{ fontSize: 80, color: "#fff", mt: 2, ml: 2 }} />
             break;
-        case '2': iconVar = <DescriptionRounded sx={{ fontSize: 80, color: "#0da37f", mt: 2, ml: 2 }} />
+        case '2': iconVar = <DescriptionRounded className='icon-box-style' sx={{ fontSize: 80, color: "#fff", mt: 2, ml: 2 }} />
             break;
-        case '3': iconVar = <CodeIcon sx={{ fontSize: 80, color: "#0da37f", mt: 2, ml: 2 }} />
+        case '3': iconVar = <CodeIcon className='icon-box-style' sx={{ fontSize: 80, color: "#fff", mt: 2, ml: 2 }} />
             break;
-        case '4': iconVar = <RecordVoiceOverIcon sx={{ fontSize: 80, color: "#0da37f", mt: 2, ml: 2 }} />
+        case '4': iconVar = <RecordVoiceOverIcon className='icon-box-style' sx={{ fontSize: 80, color: "#fff", mt: 2, ml: 2 }} />
             break;
-        case '5': iconVar = <ImageIcon sx={{ fontSize: 80, color: "#0da37f", mt: 2, ml: 2 }} />
+        case '5': iconVar = <ImageIcon className='icon-box-style' sx={{ fontSize: 80, color: "#fff", mt: 2, ml: 2 }} />
             break;
-        default: iconVar = <FormatAlignLeftOutlined sx={{ fontSize: 80, color: "#0da37f", mt: 2, ml: 2 }} />
+        default: iconVar = <FormatAlignLeftOutlined className='icon-box-style' sx={{ fontSize: 80, color: "#fff", mt: 2, ml: 2 }} />
             break;
     }
 
@@ -32,9 +32,9 @@ const BoxComp = (props) => {
             <Typography color="white" variant="h5" mb={2} fontWeight="bold" sx={{ pl: '12px', ...textFont }}>
                 {heading}
             </Typography>
-            <Card onClick={() => navigate('/' + route)} sx={{
+            <Card  className="main-box-sub" onClick={() => navigate('/' + route)} sx={{
                 bgcolor: '#282c34', color: 'white', borderRadius: 5, boxShadow: 2, height: 220, width: 250, '&:hover': {
-                    border: 2, boxShadow: 0, borderColor: "#0da37f", cursor: 'pointer',
+                    border: 2, boxShadow: 0, borderColor: "#efcb58", cursor: 'pointer',
                 }
             }}>
                 {iconVar}

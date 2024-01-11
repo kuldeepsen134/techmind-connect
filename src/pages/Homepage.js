@@ -17,7 +17,7 @@ const Homepage = () => {
 
     return (
         <>
-            <Typography color="white" variant="h5" mb={2} p={1} pl={6} fontWeight="bold" sx={{ bgcolor: "#282c34", borderTop: "2px #045846 solid", borderBottom: "2px #045846 solid", ...textFont }}>
+            <Typography color="white" variant="h5" mb={2}  textAlign={"right"} p={"1rem 6%"} fontWeight="bold" sx={{ bgcolor: "#282c34", borderTop: "2px #efcb58 solid", borderBottom: "2px #efcb58 solid", ...textFont }}>
                 Welcome, {user}
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'space-around', flexDirection: 'row', backgroundColor: '#40414f', flexFlow: 'wrap' }}>

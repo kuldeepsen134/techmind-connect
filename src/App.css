@@ -1,6 +1,169 @@
+
 @font-face {
-  font-family: TestSöhne-Buch;
-  src: url(./fonts/TestSöhne-Buch.otf);
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-RegularItalic';
+  src: url('./fonts/Gilroy-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  font-family: 'Gilroy'!important;
+
 }
 
 .Talkbot {
@@ -15,11 +178,14 @@
   left: 0px;
 }
 
+
+
+
 .sidemenu {
   width: 240px;
   padding: 10px;
   background: #202123;
-  font-family: TestSöhne-Buch, sans-serif;
+  font-family: Gilroy;
 }
 
 .side-menu-button {
@@ -95,7 +261,7 @@
   flex: 1;
   width: -webkit-fill-available;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
-  font-family: TestSöhne-Buch, sans-serif;
+  font-family: Gilroy;
 }
 
 .groupButton {
@@ -138,7 +304,7 @@
 }
 
 .chat-log::-webkit-scrollbar-thumb {
-  background-color: #0da37f;
+  background-color: #efcb58;
   /* Set the color of the scrollbar thumb (the draggable part) */
   border-radius: 5px;
   /* Set the border radius of the scrollbar thumb */
@@ -150,7 +316,7 @@
 }
 
 .chat-log::-webkit-scrollbar-thumb:hover {
-  background-color: #0b8e72;
+  background-color: #efcb18;
   /* Set the color of the scrollbar thumb on hover */
 }
 
@@ -184,7 +350,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #0da37f;
+  background-color: #1565c0;
   /* Set the color of the scrollbar thumb (the draggable part) */
   border-radius: 5px;
   /* Set the border radius of the scrollbar thumb */
@@ -197,7 +363,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background-color: #0b8e72;
+  background-color: #1565c1;
   /* Set the color of the scrollbar thumb on hover */
 }
 
@@ -207,7 +373,7 @@ html::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
   text-align: justify;
   line-height: 1.5;
-  font-family: TestSöhne-Buch, sans-serif;
+  font-family: Gilroy;
 }
 
 .chat-message.chatgpt {
@@ -229,11 +395,12 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .avatar {
-  background: #0da37f;
+  background: #444654;
   border-radius: 15%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   flex-shrink: 0;
+  border-radius: 50px;
 }
 
 .avatar.chatgpt {
@@ -248,16 +415,63 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .link {
-  padding: 20px;
-  color: #0da37f;
-  font-family: 'TestSöhne-Buch', sans-serif;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+  -webkit-background-clip: text !important;
+  /* For WebKit/Blink browsers like Chrome and Safari */
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+.main-box-sub {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+  transition: transform .2s !important;
+  /* Animation */
+
+}
+
+.main-box-sub:hover {
+  -ms-transform: scale(1.1) !important;
+  /* IE 9 */
+  -webkit-transform: scale(1.1) !important;
+  /* Safari 3-8 */
+  transform: scale(1.1) !important;
+
+}
+
+.link-btn {
+  padding: 10px 20px;
+  /* width: 18px; */
+  margin: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+  font-family: 'Gilroy', sans-serif;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.link:hover {
-  color: #045846;
+.link-btn:hover {
+
+  background: radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%), radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%) !important;
 }
+
+
+
+.btn-box-login:hover {
+  background: radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%), radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%) !important;
+}
+
+
+.link-register {
+  padding: 20px;
+  color: #1565c1;
+  font-family: 'Gilroy', sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 
 pre {
   background-color: #f4f4f4;
@@ -317,4 +531,24 @@ code {
   .groupButton {
     margin-top: 10px;
   }
+}
+
+
+.logo-font {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+  -webkit-background-clip: text !important;
+  /* For WebKit/Blink browsers like Chrome and Safari */
+  background-clip: text !important;
+  color: transparent !important;
+  /* Set text color to transparent */
+
+}
+
+
+
+.header-box {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }

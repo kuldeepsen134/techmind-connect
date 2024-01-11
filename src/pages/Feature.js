@@ -104,7 +104,7 @@ const Feature = (props) => {
                         <MenuItem value="c">C</MenuItem>
                         {/* Add more languages as needed */}
                     </Select></>}
-                <Button type='submit' disabled={loading} fullWidth={true} variant='contained' size='large' sx={{ color: "white", mt: 2, backgroundColor: '#0da37f', ...textFont, '&:hover': { backgroundColor: '#0b8e72' } }}>Submit</Button>
+                <Button type='submit' disabled={loading} fullWidth={true} className='link-btn' variant='contained' size='large' sx={{ color: "white", mt: 2, backgroundColor: '#0da37f', ...textFont, '&:hover': { backgroundColor: '#0b8e72' } }}>Submit</Button>
                 <Typography sx={textFont} color={'#ffffff'} mt={2}>Not this tool ? <Link style={{ padding: 0 }} className='link' to='/'>GO BACK</Link></Typography>
                 <Collapse in={error !== ''}>
                     <Alert severity='error' sx={{ mb: 2 }}>
@@ -114,7 +114,7 @@ const Feature = (props) => {
             </form>
             {
                 variable ? (
-                    <Card className='text-generation' sx={{ mt: 4, border: 1, boxShadow: 0, height: '500px', overflowY: 'auto', borderRadius: 5, borderTopRightRadius: 0, borderBottomRightRadius: 0, borderColor: 'natural.medium', bgcolor: '#40414f' }}>
+                    <Card className='text-generation' sx={{ mt: 4, border: 1, boxShadow: 0, height: '400px', overflowY: 'auto', borderRadius: 5, borderColor: 'natural.medium', bgcolor: '#40414f' }}>
                         {loading && (
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                                 <CircularProgress sx={{ color: '#0da37f' }} />
@@ -124,7 +124,7 @@ const Feature = (props) => {
                             (noCode ? (<Typography sx={textFont} style={{ color: 'white' }} p={2}>{variable}</Typography>)
                                 : (<pre className='text-generation'><code><Typography sx={{ ...codeFont }}>{variable}</Typography></code></pre>)))}
                     </Card>) : (
-                    <Card sx={{ mt: 4, border: 1, boxShadow: 0, height: '500px', borderRadius: 5, borderColor: 'natural.medium', bgcolor: '#40414f' }}>
+                    <Card sx={{ mt: 4, border: 1, boxShadow: 0, height: '200px', borderRadius: 5, borderColor: 'natural.medium', bgcolor: '#40414f' }}>
                         {loading && (
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                                 <CircularProgress sx={{ color: '#0da37f' }} />

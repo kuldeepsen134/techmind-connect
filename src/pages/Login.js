@@ -60,8 +60,9 @@ const Login = () => {
             usernameRef.current.focus();
         }
     }, []);
+
     const linearGradient = {
-        backgroundImage: 'linear-gradient(45deg, #2360d5f0, transparent)',
+        backgroundImage: 'radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%)',
     };
 
     return (
@@ -83,6 +84,7 @@ const Login = () => {
                     fullWidth={true}
                     variant='contained'
                     size='large'
+                    className='btn-box-login'
                     sx={{
                         color: 'white',
                         mt: 2,
@@ -93,7 +95,7 @@ const Login = () => {
                 >
                     Login
                 </Button>
-                <Typography sx={{ color: "white", ...textFont }} mt={2}>Don't have an account? <Link style={{ padding: 0 }} className='link' to='/register'>Please Sign Up</Link></Typography>
+                <Typography sx={{ color: "white", ...textFont }} mt={2}>Don't have an account? <Link style={{ padding: 0 }} className='link-register' to='/register'>Please Sign Up</Link></Typography>
                 <Collapse in={error !== ''}>
                     <Alert severity='error' sx={{ mb: 2, ...textFont }}>
                         {error}
